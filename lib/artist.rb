@@ -7,7 +7,6 @@ attr_accessor :name, :songs
 def initialize(name)
   @name = name 
   @songs = []
-  save 
 end 
 
 def save
@@ -15,7 +14,7 @@ def save
   end
 
 def self.all 
- 
+ @@all
 end 
 
 def self.find_or_create_by_name(artist_name)
