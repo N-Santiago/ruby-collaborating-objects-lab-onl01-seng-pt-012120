@@ -14,7 +14,7 @@ def save
   end
 
 def self.all 
- artist_name
+ artist_name.all.select {|artist| songs}
 end 
 
 def self.find_or_create_by_name(artist_name)
