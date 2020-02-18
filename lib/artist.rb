@@ -7,7 +7,7 @@ attr_accessor :name, :songs
 def initialize(name)
   @name = name 
   @songs = []
-  self.save 
+  self.save #saving on initializer, do not call save anywhere else 
 end 
 
 def save
